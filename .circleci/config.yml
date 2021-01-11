@@ -1,0 +1,9 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - checkout  # clone git repository to working_directory(default: ~/project)
+      - run: pwd
+      - run: echo "hello world"
